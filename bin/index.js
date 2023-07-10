@@ -6,7 +6,9 @@ const path = require('path');
 
 const child = spawn(
     path.join(__dirname, "../node_modules/@ls-lint/ls-lint/bin/cli.js"),
-    [],
+    [
+        `--config=${core.getInput("config")}`
+    ],
     {stdio: [process.stdin, process.stdout, process.stderr]}
 );
 
