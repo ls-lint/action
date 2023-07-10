@@ -1,1 +1,38 @@
-# ls-lint github action
+<img width="100" src="https://raw.githubusercontent.com/loeffel-io/ls-lint/master/assets/logo/ls-lint.png" alt="logo">
+
+# ls-lint - github action
+
+An extremely fast directory and filename linter - Bring some structure to your project filesystem
+
+## Inputs
+
+### `config`
+
+ls-lint config file path
+
+default: `.ls-lint.yml`
+
+### `workdir`
+
+change working directory before executing the given subcommand
+
+default: `.`
+
+### `warn`
+
+write lint errors to stdout instead of stderr (exit 0)
+
+default: `false`
+
+### `debug`
+
+write debug informations to stdout
+
+default: `false`
+
+## Example usage
+
+```yaml
+- uses: actions/checkout@v3
+- uses: ls-lint/action@0ee62a23e017386453e10173f84dfe2cc6fa5595
+```
