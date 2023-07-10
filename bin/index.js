@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const core = require('@actions/core');
+const github = require('@actions/github');
 const spawn = require('child_process').spawn;
 const path = require('path');
 
