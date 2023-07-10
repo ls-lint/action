@@ -5,7 +5,7 @@ const spawn = require('child_process').spawn;
 const path = require('path');
 
 const child = spawn(
-    path.join(__dirname, "../node_modules/@ls-lint/ls-lint/cli.js"),
+    path.join(__dirname, "../node_modules/@ls-lint/ls-lint/bin/cli.js"),
     [],
     {stdio: [process.stdin, process.stdout, process.stderr]}
 );
