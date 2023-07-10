@@ -1,5 +1,8 @@
 name: 'ls-lint'
 description: 'An extremely fast file and directory name linter'
+branding:
+  color: blue
+  icon: activity
 inputs:
   config:
     description: 'ls-lint config file path'
