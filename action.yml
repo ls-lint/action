@@ -1,0 +1,22 @@
+name: 'ls-lint'
+description: 'An extremely fast file and directory name linter'
+inputs:
+  config:
+    description: 'ls-lint config file path'
+    required: false
+    default: '.ls-lint.yml'
+  workdir:
+    description: 'change working directory before executing the given subcommand'
+    required: false
+    default: '.'
+  warn:
+    description: 'write lint errors to stdout instead of stderr (exit 0)'
+    required: false
+    default: 'false'
+  debug:
+    description: 'write debug informations to stdout'
+    required: false
+    default: 'false'
+runs:
+  using: 'node16'
+  main: 'bin/index.js'

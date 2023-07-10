@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ls-lint/ls-lint": "^2.0.1"
+  }
+}

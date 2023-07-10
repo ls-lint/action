@@ -1,2 +1,1 @@
-# action
-ls-lint github action
+# ls-lint github action
