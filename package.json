@@ -1,6 +1,6 @@
 {
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@ls-lint/ls-lint": "^2.0.1"
+    "@ls-lint/ls-lint": "^2.1.0"
   }
 }
