@@ -8,7 +8,7 @@ An extremely fast directory and filename linter - Bring some structure to your p
 
 ### `config`
 
-ls-lint config file path
+ls-lint config file path(s)
 
 default: `.ls-lint.yml`
 
@@ -33,6 +33,6 @@ default: `false`
 ## Example usage
 
 ```yaml
-- uses: actions/checkout@v3
-- uses: ls-lint/action@v2.1.0
+- uses: actions/checkout@v4
+- uses: ls-lint/action@v2.2.0-beta.0
 ```
