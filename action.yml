@@ -5,7 +5,7 @@ branding:
   icon: activity
 inputs:
   config:
-    description: 'ls-lint config file path'
+    description: 'ls-lint config file path(s)'
     required: false
     default: '.ls-lint.yml'
   workdir:
