@@ -34,5 +34,5 @@ default: `false`
 
 ```yaml
 - uses: actions/checkout@v4
-- uses: ls-lint/action@v2.2.2
+- uses: ls-lint/action@v2.2.3
 ```
