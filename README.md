@@ -2,7 +2,11 @@
 
 # ls-lint - github action
 
-An extremely fast directory and filename linter - Bring some structure to your project filesystem
+[`ls-lint`](https://github.com/loeffel-io/ls-lint) is an extremely fast directory and filename linter. It brings some structure to your project filesystem.
+
+This repository is the GitHub action that brings `ls-lint` to your project easily.
+
+
 
 ## Inputs
 
@@ -12,9 +16,11 @@ ls-lint config file path(s)
 
 default: `.ls-lint.yml`
 
+More information about the content of this file can be found on [https://ls-lint.org/](https://ls-lint.org/)
+
 ### `workdir`
 
-change working directory before executing the given subcommand
+change working directory before executing the given sub-command
 
 default: `.`
 
@@ -26,7 +32,7 @@ default: `false`
 
 ### `debug`
 
-write debug informations to stdout
+write debug information to stdout
 
 default: `false`
 
