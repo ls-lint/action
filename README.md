@@ -1,6 +1,6 @@
 <img width="100" src="https://raw.githubusercontent.com/loeffel-io/ls-lint/master/assets/logo/ls-lint.png" alt="logo">
 
-# ls-lint - github action
+# Official ls-lint github action
 
 [`ls-lint`](https://github.com/loeffel-io/ls-lint) is an extremely fast directory and filename linter. It brings some structure to your project filesystem.
 
