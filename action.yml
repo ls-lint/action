@@ -12,6 +12,10 @@ inputs:
     description: 'change working directory before executing the given subcommand'
     required: false
     default: '.'
+  error-output-format:
+    description: 'use a specific error output format (text, json)'
+    required: false
+    default: 'text'
   warn:
     description: 'write lint errors to stdout instead of stderr (exit 0)'
     required: false
@@ -20,6 +24,9 @@ inputs:
     description: 'write debug informations to stdout'
     required: false
     default: 'false'
+  paths:
+    description: 'file or directory path(s) to lint'
+    required: false
 runs:
   using: 'node20'
   main: 'bin/index.js'
