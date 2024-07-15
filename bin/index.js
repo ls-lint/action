@@ -4,17 +4,18 @@ const core = require('@actions/core');
 const spawn = require('child_process').spawn;
 const path = require('path');
 
-console.log(core.getInput("config").trim().split(' '))
+const argConfig = core.getInput("config").trim().split(' ').map(value => `--config=${value}`)
+const argPaths = core.getInput("paths").trim().split(' ')
 
 const child = spawn(
     path.join(__dirname, "../node_modules/@ls-lint/ls-lint/bin/cli.js"),
     [
-        `${core.getInput("config").trim().split(' ').map(value => `--config=${value}`).join(' ')}`,
+        ...argConfig,
         `--workdir=${core.getInput("workdir")}`,
         `--error-output-format=${core.getInput("error-output-format")}`,
         `--debug=${core.getInput("debug")}`,
         `--warn=${core.getInput("warn")}`,
-        `${core.getInput("paths")}`,
+        ...argPaths
     ],
     {stdio: [process.stdin, process.stdout, process.stderr]}
 );
