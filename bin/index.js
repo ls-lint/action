@@ -7,10 +7,12 @@ const path = require('path');
 const child = spawn(
     path.join(__dirname, "../node_modules/@ls-lint/ls-lint/bin/cli.js"),
     [
-        `--config=${core.getInput("config")}`,
+        `${core.getInput("config").trim().split('/\s+/').map(value => `--config ${value}`).join(' ')}`,
         `--workdir=${core.getInput("workdir")}`,
+        `--error-output-format=${core.getInput("error-output-format")}`,
         `--debug=${core.getInput("debug")}`,
-        `--warn=${core.getInput("warn")}`
+        `--warn=${core.getInput("warn")}`,
+        `${core.getInput("paths")}`,
     ],
     {stdio: [process.stdin, process.stdout, process.stderr]}
 );
