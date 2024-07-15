@@ -13,6 +13,8 @@ const args = [
     ...core.getInput("paths").trim().split(' ')
 ];
 
+console.log(args);
+
 const child = spawn(
     path.join(__dirname, "../node_modules/@ls-lint/ls-lint/bin/cli.js"),
     args,
