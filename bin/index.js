@@ -20,6 +20,7 @@ const child = spawn(
 );
 
 child.on('close', function (code) {
+    console.log(`abccccc ${code}`);
     if (code !== 0) {
         process.exit(1);
     }
