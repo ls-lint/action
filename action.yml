@@ -25,7 +25,7 @@ inputs:
     required: false
     default: 'false'
   paths:
-    description: 'file or directory paths to lint'
+    description: 'file or directory path(s) to lint'
     required: false
     default: ''
 runs:

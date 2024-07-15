@@ -43,7 +43,7 @@ default: `false`
 
 ### `paths`
 
-file or directory paths to lint
+file or directory path(s) to lint
 
 ## Example usage
 
