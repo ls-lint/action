@@ -27,7 +27,6 @@ inputs:
   paths:
     description: 'file or directory path(s) to lint'
     required: false
-    default: ''
 runs:
   using: 'node20'
   main: 'bin/index.js'
