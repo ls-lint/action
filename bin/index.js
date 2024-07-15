@@ -4,6 +4,8 @@ const core = require('@actions/core');
 const spawn = require('child_process').spawn;
 const path = require('path');
 
+console.log(core.getInput("config").trim().split('/\s+/'))
+
 const child = spawn(
     path.join(__dirname, "../node_modules/@ls-lint/ls-lint/bin/cli.js"),
     core.getInput("config").trim().split('/\s+/').map(value => `--config=${value}`).concat([
