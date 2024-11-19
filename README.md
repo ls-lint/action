@@ -49,5 +49,5 @@ file or directory path(s) to lint
 
 ```yaml
 - uses: actions/checkout@v4
-- uses: ls-lint/action@v2.3.0-beta.1
+- uses: ls-lint/action@v2.3.0-beta.2
 ```
